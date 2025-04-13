@@ -9,4 +9,4 @@ ENV WEBHOOK_URL=https://n8n-pizzeria.onrender.com
 
 EXPOSE 5678
 
-CMD n8n
+CMD ["n8n"]
