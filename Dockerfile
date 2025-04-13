@@ -1,5 +1,12 @@
-FROM n8nio/n8n:1.45.0
+FROM node:18
 
+# Crear directorio de trabajo
+WORKDIR /app
+
+# Instalar n8n de forma global
+RUN npm install -g n8n
+
+# Variables de entorno necesarias
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=superclave123
