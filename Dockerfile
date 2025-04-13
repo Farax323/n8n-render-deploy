@@ -1,10 +1,4 @@
-FROM node:18
-
-WORKDIR /app
-
-RUN npm install -g n8n
+FROM n8nio/n8n:1.86.1
 
 EXPOSE 5678
-
 CMD ["n8n"]
-
